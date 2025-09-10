@@ -1,10 +1,10 @@
-# Réplica da Interface da Netflix
+# Réplica da Interface de Streaming
 
 ![Prévia do Projeto](./print.png)
 
 ## 📖 Sobre o Projeto
 
-Este projeto é uma réplica da landing page da Netflix, desenvolvido como parte dos meus estudos em desenvolvimento front-end. O objetivo foi recriar os principais componentes visuais e interativos da página, focando em HTML semântico, CSS moderno e manipulação do DOM com JavaScript puro.
+Este projeto é uma réplica genérica de uma página de streaming, desenvolvido como parte dos meus estudos em desenvolvimento front-end. O objetivo foi recriar os principais componentes visuais e interativos da página, focando em HTML semântico, CSS moderno e manipulação do DOM com JavaScript puro.
 
 ---
 
@@ -40,4 +40,5 @@ Feito por Edson Ulisses.
 
 -   **LinkedIn:** [Edson-Sobrinho](https://www.linkedin.com/in/edson-sobrinho-103657372)
 -   **GitHub:** [@edson66](https://github.com/edson66)
+
 
