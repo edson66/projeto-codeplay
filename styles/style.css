@@ -1,0 +1,20 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-titulos:"Bebas Neue", sans-serif;
+    --fonte-textos:"Montserrat", sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}

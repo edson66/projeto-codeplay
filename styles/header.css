@@ -1,0 +1,241 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    gap: 120px;
+    padding-top: 25px;
+    align-items: center;
+    
+}
+
+.background{
+    background-image: url(../assets/background3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.background::before{
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100vh;
+
+    background: 
+    linear-gradient(to bottom,rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 20%),
+    rgba(0,0,0,0.8);
+
+    z-index: 1;
+}
+
+
+
+.background > * {
+    position: relative;
+    z-index: 2;
+}
+
+.img__logo{
+    width: 150px;
+    
+}
+
+.botao__entrar{
+    background-color: rgb(223, 12, 12);
+    width: 5rem;
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-textos);
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.botao__entrar:hover{
+    background-color: brown;
+}
+
+.conteiner__inicial{
+    position: relative;
+    top: 28vh;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.conteiner__inicial h2{
+    font-family: var(--fonte-textos);
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.conteiner__inicial h3{
+    font-family: var(--fonte-textos);
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+
+.conteiner__inicial p{
+    font-family: var(--fonte-textos);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.conteiner__inicial__login{
+    display: flex;
+    align-items: center;
+}
+
+.conteiner__inicial__login input{
+    background-color: rgba(22, 22, 22, 0.7);
+    border: none;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 70%;
+    padding: 20px 0;
+    color: white;
+    font-family: var(--fonte-textos);
+    font-size: 1.1rem;
+}
+
+.conteiner__inicial__login input::placeholder{
+    color: rgb(165, 163, 163);
+    padding-left: 10px;
+    font-family: var(--fonte-textos);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.conteiner__inicial__login a{
+    text-decoration: none;
+    background-color: red;
+    border-radius: 4px;
+    font-family: var(--fonte-textos);
+    font-weight: 600;
+    color: white;
+    font-size: 1.4rem;
+    width: 20%;
+    margin: 0 10px;
+    padding: 13.6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    transition: 0.2s;
+}
+
+.conteiner__inicial__login a:hover{
+    background-color: rgb(192, 15, 15);
+}
+
+.conteiner__inicial__login a img{
+    width: 25px;
+    rotate: 270deg;
+}
+
+
+@media (max-width:1024px){
+
+    .background{
+        height: 70vh;  
+    }   
+
+    .background::before{
+        height: 70vh;
+    }
+
+    .conteiner__inicial{
+        top: 20vh;
+
+    }
+
+    .conteiner__inicial h2{
+        max-width: 500px;
+        margin: 0 auto;
+        font-size: 2.5rem;
+    }
+
+    .conteiner__inicial__login input{
+        width: 50%;
+        margin: 0 10px 0 auto;
+    }
+
+    .conteiner__inicial__login a{
+        margin: 0 auto 0 0;
+    }
+
+}
+
+@media(max-width: 768px){
+    .background{
+        height: 70vh;  
+    } 
+
+    .conteiner__inicial{
+        top: 5vh;
+        
+    }
+
+    .conteiner__inicial h2{
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: 1.7rem;
+    }
+
+    .conteiner__inicial h3{
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 10px 0 0 0 ;
+    }
+
+    .background{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        
+        
+    }
+
+    .background::before{
+        width: 100%;
+        height: 70vh;
+    }
+
+    .img__logo{
+        width: 100px;
+        
+    }
+
+    .botao__entrar{
+        margin-right: 15px;
+    }
+
+    .conteiner__inicial__login{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteiner__inicial__login input{
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .conteiner__inicial__login a{
+        margin: 10px auto;
+        width: 40%;
+        padding: 10px;
+        font-size: 1rem;
+        gap: 0;
+        padding: 13.6px 10px 13.6px 13.6px;
+    }   
+
+}
